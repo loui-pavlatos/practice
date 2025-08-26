@@ -116,8 +116,3 @@ for (let i = 0; i < 100; i++) {
 }
 
 init([1, 4, 5, 3, 1]) // initialize network. specify how many nodes in each layer
-
-// sample error calculation
-error = computeError(data[5], labels[5])
-error = computeError(24, 24*3)
-console.log(error)
