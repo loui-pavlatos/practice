@@ -29,7 +29,7 @@ weight.
  */
 function lossGradient(layerKey, neuronIndex, weightIndex) {
     const dlDpred = prediction - target;
-    
+    // another louies comment
     let gradient = dlDpred;
     const layers = Object.keys(hidden);
     const targetLayerIndex = layers.indexOf(layerKey);
@@ -67,6 +67,9 @@ function init(layers) {
         hidden['h' + (i)] = []
         weights['h' + i] = []
         biases['h' + i] = []
+
+
+        
         activations['h' + i] = 'relu'
 
         for (let j = 0; j < layers[i]; j++) {
@@ -121,3 +124,6 @@ init([1, 4, 5, 3, 1]) // initialize network. specify how many nodes in each laye
 error = computeError(data[5], labels[5])
 error = computeError(24, 24*3)
 console.log(error)
+
+
+// LOUIES CHANGES
